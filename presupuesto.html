@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronLab Fitness | Presupuesto</title>
+  <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+<header>
+  <div class="container topbar">
+    <div class="logo">IRONLAB FITNESS</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="hombros.html">Hombros</a></li>
+        <li><a href="triceps.html">Tríceps</a></li>
+        <li><a href="biceps.html">Bíceps</a></li>
+        <li><a href="pecho.html">Pecho</a></li>
+        <li><a href="piernas.html">Pierna</a></li>
+        <li><a href="espalda.html">Espalda</a></li>
+        <li><a href="dieta.html">Dieta</a></li>
+        <li><a href="rutina.html">Rutina</a></li>
+        <li><a href="presupuesto.html">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <span class="badge">Calcula tu plan</span>
+    <h1>Solicita un presupuesto a medida</h1>
+    <p>Cuéntanos tus objetivos y te enviaremos una propuesta personalizada en menos de 24h.</p>
+  </section>
+
+  <section class="card" style="max-width: 600px; margin: 30px auto;">
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+      </div>
+
+      <div class="form-group">
+        <label for="plan">Selecciona tu Plan Base</label>
+        <select id="plan" name="plan">
+          <option value="mensual">Mensual Estándar (35€)</option>
+          <option value="trimestral">Trimestral Ahorro (90€)</option>
+          <option value="anual">Anual Premium (300€)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Servicios Extra:</label>
+        <div class="checkbox-group">
+          <input type="checkbox" id="extra1" name="extras" value="dieta">
+          <label for="extra1">Plan de Dieta Personalizado (+15€)</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="extra2" name="extras" value="entrenador">
+          <label for="extra2">Entrenador Personal (+25€/sesión)</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="meses">Duración estimada (meses)</label>
+        <input type="number" id="meses" name="meses" min="1" max="12" value="1">
+      </div>
+
+      <button type="submit" class="btn" style="border:none; cursor:pointer; width:100%; margin-top:10px;">
+        Calcular y Enviar Solicitud
+      </button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 IronLab Fitness — Proyecto 1º DAM (HTML + CSS)</p>
+  </div>
+</footer>
+
+</body>
+</html>
